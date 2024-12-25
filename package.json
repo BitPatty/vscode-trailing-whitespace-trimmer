@@ -3,7 +3,7 @@
   "displayName": "Trailing Whitespace Trimmer",
   "description": "A VS Code formatter that trims trailing whitespace",
   "publisher": "bitpatty",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/bitpatty/vscode-trailing-whitespace-trimmer",
   "repository": {
     "type": "git",
@@ -19,9 +19,10 @@
   "categories": [
     "Formatters"
   ],
-  "preview": true,
+  "preview": false,
   "main": "./dist/web/extension.js",
   "browser": "./dist/web/extension.js",
+  "icon": "./icon.png",
   "activationEvents": [
     "onStartupFinished"
   ],
