@@ -1,0 +1,11 @@
+*.ts text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+
+.nvmrc text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.vscodeignore text eol=lf
+
+.png binary

@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-const DEFAULT_STATUS_TEXT = 'TTW Ready';
+const DEFAULT_STATUS_TEXT = 'TWT Ready';
 const DEFAULT_STATUS_TOOLTIP = 'Trailing whitespace trimmer formatter is ready to use.';
 
 class DocumentFormatter implements vscode.DocumentFormattingEditProvider {
@@ -16,7 +16,7 @@ class DocumentFormatter implements vscode.DocumentFormattingEditProvider {
 
 	/**
 	 * Instantiates a new document formatter provider
-	 * 
+	 *
 	 * @param statusBarItem  The status bar item
 	 */
 	public constructor(statusBarItem: vscode.StatusBarItem) {
@@ -53,7 +53,7 @@ class DocumentFormatter implements vscode.DocumentFormattingEditProvider {
 		if (token.isCancellationRequested) return []
 
 		if (edits.length > 0)
-			this.notify('$(check) TTW applied', 'Tailing whitespace trimmer applied', 1000);
+			this.notify('$(check) TWT applied', 'Trailing whitespace trimmer applied', 1000);
 
 		return edits;
 	}
@@ -61,8 +61,8 @@ class DocumentFormatter implements vscode.DocumentFormattingEditProvider {
 	/**
 	 * Updates the status bar item to the specified contents and resets it after
 	 * the specified number of milliseconds
-	 * 
-	 * @param text     The status bar text 
+	 *
+	 * @param text     The status bar text
 	 * @param tooltip  The tooltip text
 	 * @param timeout  The reset timeout
 	 */
@@ -74,7 +74,7 @@ class DocumentFormatter implements vscode.DocumentFormattingEditProvider {
 
 		if (timeout == null) return;
 
-		setTimeout(() => {
+		this.statusbarResetTimeout = setTimeout(() => {
 			this.statusBarItem.text = DEFAULT_STATUS_TEXT;
 			this.statusBarItem.tooltip = DEFAULT_STATUS_TOOLTIP;
 		}, timeout);
@@ -83,8 +83,8 @@ class DocumentFormatter implements vscode.DocumentFormattingEditProvider {
 
 /**
  * Activates the extension. This function is called by VSCode.
- * 
- * @param context  The VSCode context 
+ *
+ * @param context  The VSCode context
  */
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Trailing whitespace trimmer activating');

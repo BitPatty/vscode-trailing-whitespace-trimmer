@@ -6,7 +6,7 @@ A formatter extension for Visual Studio Code that does nothing but trim trailing
 
 ## Setup
 
-Install the extension and and add the following configuration to your VSCode's `settings.json` to apply it by default:
+Install the extension and add the following configuration to your VSCode's `settings.json` to apply it by default:
 
 ```jsonc
 // Alternatively you can configure this via the UI:
@@ -25,6 +25,15 @@ Or to add it to specific file formats:
   }
 }
 ```
+
+## Development
+
+Update `src/web/extension.ts` with the necessary changes.
+
+After building (`npm run build`), the project can be run locally using:
+
+- The VSCode debugger: local / electron
+- `npm run test-web`: web version
 
 ## License
 
