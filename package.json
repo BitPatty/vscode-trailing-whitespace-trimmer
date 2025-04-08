@@ -14,7 +14,7 @@
     "url": "https://github.com/bitpatty/vscode-trailing-whitespace-trimmer/issues"
   },
   "engines": {
-    "vscode": "^1.96.0"
+    "vscode": "^1.99.1"
   },
   "categories": [
     "Formatters"
