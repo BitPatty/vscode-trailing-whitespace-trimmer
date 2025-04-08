@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.1.4
+
+- Updated dependencies
+
 ## v0.1.3
 
 - Remove redundant files from published package
