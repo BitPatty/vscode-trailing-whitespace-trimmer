@@ -1,5 +1,13 @@
 # Change Log
 
+## v0.1.6
+
+- Updated changelog
+
+## v0.1.5
+
+- Updated dependencies
+
 ## v0.1.4
 
 - Updated dependencies
