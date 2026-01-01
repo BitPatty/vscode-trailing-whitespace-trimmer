@@ -35,7 +35,7 @@
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/vscode": "1.106.1",
+    "@types/vscode": "1.107.0",
     "@vscode/test-web": "0.0.77",
     "@vscode/vsce": "3.7.1",
     "typescript": "5.9.3"
