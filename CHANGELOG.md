@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.0.0
+
+- Updated build dependencies
+
 ## v0.1.6
 
 - Updated changelog
